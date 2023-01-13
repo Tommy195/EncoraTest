@@ -1,0 +1,14 @@
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\bin\Debug\net6.0\EncoraTest.exe
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\bin\Debug\net6.0\EncoraTest.deps.json
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\bin\Debug\net6.0\EncoraTest.runtimeconfig.json
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\bin\Debug\net6.0\EncoraTest.dll
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\bin\Debug\net6.0\ref\EncoraTest.dll
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\bin\Debug\net6.0\EncoraTest.pdb
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.AssemblyInfoInputs.cache
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.AssemblyInfo.cs
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.csproj.CoreCompileInputs.cache
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.dll
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\ref\EncoraTest.dll
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.pdb
+C:\Users\tomas\source\repos\EncoraTest\EncoraTest\obj\Debug\net6.0\EncoraTest.genruntimeconfig.cache
