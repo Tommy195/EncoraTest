@@ -8,55 +8,57 @@ public class MainClass
 {
     static void Main()
     {
-        var instance = new StringService();
-
-        var input = new Input();
-        input.Phrases = new List<string>();
-        var output = new Output();
-        output.Phrases = new List<string>();
-
-        Console.WriteLine("Hello, friend.");
-        Console.WriteLine("Please enter a number: ");
-        var inputNumber = Console.ReadLine();
-        if (inputNumber.All(char.IsDigit))
+        try
         {
+            var instance = new StringService();
+
+            var input = new Input();
+            input.Phrases = new List<string>();
+            var output = new Output();
+            output.Phrases = new List<string>();
+
+            Console.WriteLine("Hello, friend.");
+            Console.WriteLine("Please enter a number: ");
+            var inputNumber = Console.ReadLine();
+            
+            if (!inputNumber.All(char.IsDigit))
+                throw new AppException("Input was not a number. Goodbye!");
+
             input.Quantity = Int32.Parse(inputNumber);
-        }
-        else
-        {
-            throw new AppException("Input was not a number. Goodbye!");
-        }
 
-        Console.WriteLine($"Now please enter: {input.Quantity} phrases.");
+            Console.WriteLine($"Now please enter: {inputNumber} phrases.");
 
-        var aux = 0;
+            var aux = 0;
 
-        while (aux < input.Quantity)
-        {
-            var inputString = Console.ReadLine();
-            if (Regex.IsMatch(inputString, @"^[a-zA-Z]+$"))
+            while (aux < input.Quantity)
             {
+                var inputString = Console.ReadLine();
                 inputString.ToLower();
                 input.Phrases.Add(inputString);
                 aux++;
                 Console.WriteLine($"{input.Quantity - aux} phrases remaining.");
             }
-            else
+
+            Console.Clear();
+            Console.WriteLine("Ok. Let me do the magic...");
+            Console.WriteLine();
+            Console.WriteLine("Result:");
+            Console.WriteLine();
+
+            var result = instance.SortingOperation(input.Phrases);
+
+            foreach (var phrase in result.Phrases)
             {
-                throw new AppException("Invalid character was not a number. Goodbye!");
+                Console.WriteLine(phrase);
             }
+
+            Console.WriteLine("Press enter to close...");
+            Console.ReadLine();
         }
-
-        Console.WriteLine("Ok. Let me do the magic...");
-
-        var result = instance.SortingOperation(input);
-
-        foreach (var phrase in result.Phrases)
+        catch (AppException ex)
         {
-            Console.WriteLine(phrase);
-        }
 
-        Console.WriteLine("Press enter to close...");
-        Console.ReadLine();
+            Console.WriteLine(ex.Message);
+        }
     }
 }

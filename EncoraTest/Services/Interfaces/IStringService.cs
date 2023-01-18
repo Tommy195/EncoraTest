@@ -5,6 +5,6 @@ namespace EncoraTest.Services.Interfaces
 {
     public interface IStringService
     {
-        Output SortingOperation(Input inputObject);
+        Output SortingOperation(List<string> phrases);
     }
 }
